@@ -179,10 +179,10 @@
         <form method="POST">
             {% csrf_token %}
 
-            <label for="paciente_nome">Nome Completo</label>
+            <label for="paciente_nome">Nome Completo:</label>
             <input type="text" id="paciente_nome" name="paciente_nome" required placeholder="Digite seu nome...">
 
-            <label for="medico_id">Especialista</label>
+            <label for="medico_id">Especialista:</label>
             <select id="medico_id" name="medico_id" required>
                 <option value="" disabled selected>Selecione o médico...</option>
                 
@@ -191,10 +191,10 @@
                 {% endfor %}
             </select>
 
-            <label for="data">Data e Horário</label>
+            <label for="data">Data e Horário:</label>
             <input type="datetime-local" id="data" name="data" required>
 
-            <label for="motivo">Motivo (Opcional)</label>
+            <label for="motivo">Motivo (Opcional):</label>
             <textarea id="motivo" name="motivo" rows="3" placeholder="Ex: Retorno, dores, etc."></textarea>
 
             <button type="submit">Confirmar Agendamento</button>
@@ -202,4 +202,5 @@
     </div>
 
 </body>
+
 </html>
